@@ -4,6 +4,7 @@ services:
     env: node
     plan: starter
     buildCommand: yarn install && yarn build
+    rootDir: backend
     startCommand: rsync -a public/ /data/public/ && yarn start
     healthCheckPath: /_health
     autoDeploy: false
