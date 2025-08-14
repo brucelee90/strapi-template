@@ -4,7 +4,7 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    "render-build": "yarn install --frozen-lockfile && strapi build",
+    "render-build": "npm install --frozen-lockfile && strapi build",
     "build": "strapi build",
     "console": "strapi console",
     "deploy": "strapi deploy",
@@ -17,7 +17,6 @@
     "postinstall": "cp -r node_modules/strapi-be-components/src/* src/"
   },
   "dependencies": {
-    "@brucelee90/strapi-be-components": "file:../../strapi-be-components",
     "@strapi/plugin-cloud": "5.21.0",
     "@strapi/plugin-users-permissions": "5.21.0",
     "@strapi/strapi": "5.21.0",
