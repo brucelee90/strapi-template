@@ -1,24 +1,17 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface HeroNewComponent extends Struct.ComponentSchema {
-  collectionName: 'components_hero_new_components';
+export interface HeroTest extends Struct.ComponentSchema {
+  collectionName: 'components_hero_tests';
   info: {
-    displayName: 'New Component';
-    icon: 'alien';
+    displayName: 'test';
   };
-  attributes: {
-    testMedia: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    testText: Schema.Attribute.String;
-  };
+  attributes: {};
 }
 
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'hero.new-component': HeroNewComponent;
+      'hero.test': HeroTest;
     }
   }
 }

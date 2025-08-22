@@ -1,6 +1,6 @@
 {
   "name": "backend",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
   "scripts": {
@@ -17,15 +17,15 @@
     "postinstall": "cp -r node_modules/@brucelee90/strapi-be-components/src/* src/"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.21.0",
-    "@strapi/plugin-users-permissions": "5.21.0",
-    "@strapi/strapi": "5.21.0",
+    "@strapi/plugin-cloud": "5.23.0",
+    "@strapi/plugin-users-permissions": "5.23.0",
+    "@strapi/strapi": "5.23.0",
     "better-sqlite3": "11.3.0",
     "pg": "^8.16.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "@brucelee90/strapi-be-components": "^1.0.0",
+    "@brucelee90/strapi-be-components": "1.0.6",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
@@ -39,7 +39,7 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "b648a5c3-c807-4769-b9ed-6d2ce8dca05d",
-    "installId": "5596da2ef4c02478eb8c3572700893a2f1ee1a8420ebacc0c6f815d500d441b3"
+    "uuid": "3a1abef5-15eb-4b30-a46e-0498b3dcaa84",
+    "installId": "e2e703c10a7d7e2e4cacffbac90e28d550cb4d91dea7174897b172bc616ff01c"
   }
 }
