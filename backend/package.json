@@ -14,7 +14,7 @@
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry",
-    "postinstall": "cp -r node_modules/@brucelee90/strapi-be-components/src/* src/"
+    "postinstall": "cp -r node_modules/@brucelee90/strapi-be-components/src ./"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.23.0",
@@ -25,7 +25,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "@brucelee90/strapi-be-components": "1.0.6",
+    "@brucelee90/strapi-be-components": "1.0.8",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {

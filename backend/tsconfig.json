@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "moduleResolution": "Node",
+  "module": "Node16",
+  "moduleResolution": "Node16",
     "lib": ["ES2020"],
     "target": "ES2019",
     "strict": false,
@@ -34,7 +34,9 @@
     ".tmp/",
 
     // Do not include admin files in the server compilation
-    "src/admin/",
+  "src/admin/",
+  // Also exclude any nested admin dirs that may be copied in (e.g., src/src/admin)
+  "**/admin/**",
     // Do not include test files
     "**/*.test.*",
     // Do not include plugins in the server compilation
